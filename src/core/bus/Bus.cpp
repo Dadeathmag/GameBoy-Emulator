@@ -1,12 +1,16 @@
 #include "Bus.hpp"
 
-uint8_t Bus::readBus(uint16_t addr){
+uint8_t Bus::read(uint16_t addr){
     switch(mapper(addr)){
-
+        case Component::ROM0:
+        case Component::ROMX:
+            break;
+        default:
+            return 0xFF;
     };
 }
 
-void Bus::writeBus(uint16_t addr,uint8_t byte){
+void Bus::write(uint16_t addr,uint8_t byte){
     switch(mapper(addr)){};
 }
 

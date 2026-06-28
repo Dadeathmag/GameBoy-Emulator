@@ -17,8 +17,8 @@ enum class Component:uint8_t{
 
 class Bus{
     public:
-        uint8_t readBus(uint16_t addr);
-        void writeBus(uint16_t addr,uint8_t byte);
+        uint8_t read(uint16_t addr);
+        void write(uint16_t addr,uint8_t byte);
     private:
         Component mapper(uint16_t addr);
         //components
