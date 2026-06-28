@@ -24,12 +24,16 @@ find_package(SDL2 REQUIRED)
 add_library(
     Core
     src/core/cpu/Cpu.cpp
+    src/core/bus/Bus.cpp
+    src/core/cartridge/Cartridge.cpp
 )
 
 target_include_directories(
     Core
     PUBLIC
     src/core/cpu
+    src/core/bus
+    src/core/cartridge
 )
 
 

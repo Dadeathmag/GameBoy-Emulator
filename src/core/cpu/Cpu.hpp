@@ -1,9 +1,8 @@
+#include "cpuState.hpp"
 
 class Cpu{
     public:
         Cpu();
     private:
-        struct Cpustate{
-
-        };
+        cpuState State;
 };
